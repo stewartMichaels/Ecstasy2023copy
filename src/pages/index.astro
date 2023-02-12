@@ -1,26 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout>
-	<div id="wrapper" class="mx-auto max-w-[600px] md:max-w-[1300px] mt-16 md:mt-[150px] px-10 relative">
-		<img id="HeroImage" src="../assets/HeroImage.png" alt="hero image" class="absolute -z-0 right-[-345px] md:top-[-280px] top-[-190px]">
+	<div id="wrapper" class="mx-auto w-full  md:max-w-[1300px] mt-16 md:mt-[150px] px-2 md:px-10 relative">
+		<img id="HeroImage" src="../assets/heroImg1.png" alt="hero image" class="hidden md:block  absolute -z-0 right-[-345px] md:top-[-280px] top-[-190px]">
 
-		<main class="relative z-20 flex flex-col md:flex-row gap-10">
+		<main class="mx-auto relative z-20 flex flex-col md:flex-row gap-10">
 		<div id="left-col" class=" w-full md:w-6/12">
 			<section id="hero">
 				<h1 class="uppercase font-bold text-6xl font-playfair mb-2">Come Get Lost in the Madness!</h1> 
-				<span class="text-gradient uppercase font-black text-7xl">ECSTASY23 </span>
+				<span class="text-gradient uppercase font-black text-6xl md:text-7xl">ECSTASY23 </span>
 				<p class="font-light text-3xl mt-2">Cultural Festival</p>
 			</section>
 			<p class="instructions font-poppins w-full lg:w-[90%]">
 				Experience the vibrant atmosphere of <strong>ECSTASY 2023</strong>, a college cultural festival with performances from talented artists, interactive activities, and the chance to explore new trends. Join us and let the good times roll!
 			</p>
 	</div>
-	<div id="right-col" class="grow grid grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]">
-			<div class="link-card card1 h-auto items-center">
-						<a href="#">
+	<div id="right-col" class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]">
+			<div class="link-card card1  items-end">
+						<a href="./events">
 							<h2>
 								Events
 								<span>&rarr;</span>
@@ -30,8 +29,8 @@ import Card from '../components/Card.astro';
 							</p>
 						</a>
 			</div>
-			<div class="link-card card2 h-auto items-center">
-						<a href="#">
+			<div class="link-card card2 h-auto items-end">
+						<a href="./contests">
 							<h2>
 								Contests
 								<span>&rarr;</span>
@@ -41,8 +40,8 @@ import Card from '../components/Card.astro';
 							</p>
 						</a>
 			</div>
-			<div class="link-card card3 h-auto items-center">
-						<a href="#">
+			<div class="link-card card3 h-auto items-end">
+						<a href="./workshops">
 							<h2>
 								Workshops
 								<span>&rarr;</span>
@@ -67,8 +66,7 @@ import Card from '../components/Card.astro';
 		font-weight: 800;
 		margin: 0;
 	}
-
-		.text-gradient {
+	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -105,9 +103,9 @@ import Card from '../components/Card.astro';
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 	}
-
 	.link-card > a {
 		width: 100%;
+		border: 2px solid black;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: 1rem 1.3rem;
