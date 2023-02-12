@@ -1,134 +1,147 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<div id="wrapper" class="mx-auto w-full  md:max-w-[1300px] mt-16 md:mt-[150px] px-2 md:px-10 relative">
-		<img id="HeroImage" src="../assets/heroImg1.png" alt="hero image" class="hidden md:block  absolute -z-0 right-[-345px] md:top-[-280px] top-[-190px]">
+  <div
+    id="wrapper"
+    class="mx-auto w-full md:max-w-[1300px] mt-16 md:mt-[150px] px-2 md:px-10 relative"
+  >
+    <img
+      id="HeroImage"
+      src="../assets/heroImg1.png"
+      alt="hero image"
+      class="hidden md:block absolute -z-0 right-[-345px] md:top-[-280px] top-[-190px]"
+    />
 
-		<main class="mx-auto relative z-20 flex flex-col md:flex-row gap-10">
-		<div id="left-col" class=" w-full md:w-6/12">
-			<section id="hero">
-				<h1 class="uppercase font-bold text-6xl font-playfair mb-2">Come Get Lost in the Madness!</h1> 
-				<span class="text-gradient uppercase font-black text-6xl md:text-7xl">ECSTASY23 </span>
-				<p class="font-light text-3xl mt-2">Cultural Festival</p>
-			</section>
-			<p class="instructions font-poppins w-full lg:w-[90%]">
-				Experience the vibrant atmosphere of <strong>ECSTASY 2023</strong>, a college cultural festival with performances from talented artists, interactive activities, and the chance to explore new trends. Join us and let the good times roll!
-			</p>
-	</div>
-	<div id="right-col" class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]">
-			<div class="link-card card1  items-end">
-						<a href="./events">
-							<h2>
-								Events
-								<span>&rarr;</span>
-							</h2>
-							<p>
-								Participate in Variety of Events!
-							</p>
-						</a>
-			</div>
-			<div class="link-card card2 h-auto items-end">
-						<a href="./contests">
-							<h2>
-								Contests
-								<span>&rarr;</span>
-							</h2>
-							<p>
-								Participate in Variety of Events!
-							</p>
-						</a>
-			</div>
-			<div class="link-card card3 h-auto items-end">
-						<a href="./workshops">
-							<h2>
-								Workshops
-								<span>&rarr;</span>
-							</h2>
-							<p>
-								Participate in Variety of Events!
-							</p>
-						</a>
-			</div>
-		</div>
-		</main>
-	</div>
+    <main class="mx-auto relative z-20 flex flex-col md:flex-row gap-10">
+      <div id="left-col" class="w-full md:w-6/12">
+        <section id="hero">
+          <h1 class="uppercase font-bold text-6xl font-playfair mb-2">
+            Come Get Lost in the Madness!
+          </h1>
+          <span class="text-gradient uppercase font-black text-6xl md:text-7xl"
+            >ECSTASY23
+          </span>
+          <p class="font-light text-3xl mt-2">Cultural Festival</p>
+        </section>
+        <p class="instructions font-poppins w-full lg:w-[90%]">
+          Experience the vibrant atmosphere of <strong>ECSTASY 2023</strong>, a
+          college cultural festival with performances from talented artists,
+          interactive activities, and the chance to explore new trends. Join us
+          and let the good times roll!
+        </p>
+      </div>
+      <div
+        id="right-col"
+        class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]"
+      >
+        <div class="link-card card1 items-end">
+          <a href="./events">
+            <h2>
+              Events
+              <span>&rarr;</span>
+            </h2>
+            <p>Participate in Variety of Events!</p>
+          </a>
+        </div>
+        <div class="link-card card2 h-auto items-end">
+          <a href="./contests">
+            <h2>
+              Contests
+              <span>&rarr;</span>
+            </h2>
+            <p>Participate in Variety of Events!</p>
+          </a>
+        </div>
+        <div class="link-card card3 h-auto items-end">
+          <a href="./workshops">
+            <h2>
+              Workshops
+              <span>&rarr;</span>
+            </h2>
+            <p>Participate in Variety of Events!</p>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
 </Layout>
 
 <style>
-	body{
-		overflow-x: hidden;
-	}
-	
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	#right-col{
-		grid-template-areas: 
-			"left right"
-			"left bottom";
-	}
-	.card1{
-		grid-area: left;
-	}
+  body {
+    overflow-x: hidden;
+  }
 
-	/*PreDefined */
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 0.25rem;
-		background-color: white;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 0.6rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		border: 2px solid black;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: 1rem 1.3rem;
-		border-radius: 0.35rem;
-		color: #111;
-		background-color: white;
-		opacity: 0.8;
-	}
-	.link-card > h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	.link-card > p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-		color: #444;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
-	}
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  #right-col {
+    grid-template-areas:
+      "left right"
+      "left bottom";
+  }
+  .card1 {
+    grid-area: left;
+  }
+
+  /*PreDefined */
+  .link-card {
+    list-style: none;
+    display: flex;
+    padding: 0.25rem;
+    background-color: white;
+    background-image: none;
+    background-size: 400%;
+    border-radius: 0.6rem;
+    background-position: 100%;
+    transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  .link-card > a {
+    width: 100%;
+    border: 2px solid black;
+    text-decoration: none;
+    line-height: 1.4;
+    padding: 1rem 1.3rem;
+    border-radius: 0.35rem;
+    color: #111;
+    background-color: white;
+    opacity: 0.8;
+  }
+  .link-card > h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-card > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #444;
+  }
+  .link-card:is(:hover, :focus-within) {
+    background-position: 0;
+    background-image: var(--accent-gradient);
+  }
+  .link-card:is(:hover, :focus-within) h2 {
+    color: rgb(var(--accent));
+  }
 </style>
