@@ -1,0 +1,48 @@
+---
+
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Ecstasy23</title>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header id="nav-container" class="max-w-[600px] md:max-w-[1300px] mx-auto flex justify-between items-center p-10 relative z-20">
+			<a href="#" class="text-3xl font-playfair">Ecstasy23</a>
+			<nav>
+				<ul class=" hidden md:flex gap-16 font-poppins text-white font-black">
+					<li><a href="#">EVENTS</a></li>
+					<li><a href="#">CONTESTS</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<slot />
+	</body>
+</html>
+
+
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #F6F6F6;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>
