@@ -3,28 +3,225 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
 ---
 
 <NonHomeLayout>
-	<div id="background-img" class="-z-30"></div>
-	<div id="wrapper" class=" w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10">
-		<h1 class="text-5xl font-playfair text-center text-slate-100">About Us</h1>
-	<main>
-		
-	</main>
-	</div>
+  <div id="background-img" class="-z-30"></div>
+  <div
+    id="wrapper"
+    class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10"
+  >
+    <!-- <h1 class="text-5xl font-playfair text-center text-slate-100 pb-10">
+      About Us
+    </h1> -->
+    <main>
+      <!-- Director's Message -->
+      <section class="bg-white py-16 select-none pointer-events-none">
+        <h2
+          class="text-gray-800 mb-4 pb-10 font-playfair text-4xl font-light text-center"
+        >
+          Word from our Director
+        </h2>
+        <div class="container mx-auto px-10">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 flex items-baseline justify-center">
+              <img
+                src="../public/assets/board/director-image.jpeg"
+                alt="Director Image"
+                class="w-full rounded-full md:w-3/4"
+              />
+            </div>
+            <div class="w-full md:w-2/3 md:pl-16 mt-8 md:mt-0">
+              <blockquote
+                class="text-gray-600 italic border-l-4 pl-4 border-gray-300"
+              >
+                <p class="mb-4">
+                  "Welcome to Central Institute of Technology Kokrajhar, a
+                  premier institute located in Kokrajhar and one of the unique
+                  institutes under MoE (Formerly MHRD), Government of India. Our
+                  objectives are to provide quality education to the youth in
+                  all streams of engineering, technology, and vocational
+                  training. We also strive to develop a research and development
+                  culture that will ultimately lead to more industry
+                  partnerships, local innovation, and entrepreneurship. We are
+                  committed to implementing the salient features of the new
+                  education policy (NEP2020), which will enhance the overall
+                  quality of education and boost the economy of the region and
+                  the state. Aspiring students are encouraged to join us and
+                  pursue their objectives of life, as we build a network of
+                  excellence and extend our interactions with knowledge
+                  advancing partners. Together, we can create an intellectual
+                  society where the focus is on socio-economic growth and make
+                  notable contributions to the progress of the region and the
+                  nation."
+                </p>
+                <cite
+                  >- Prof. Hemanta Kumar Kalita
+                  <p class="text-gray-500">Director (i/c), CIT Kokrajhar</p>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Overview section -->
+      <section class="bg-gray-100 py-16 select-none pointer-events-none">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
+          >
+            Event Overview
+          </h2>
+          <p class="text-gray-600 leading-relaxed px-10">
+            Welcome to Ecstasy 2023, the most anticipated cultural festival of
+            the year! This year, our festival promises to be bigger and better
+            than ever before, with an exciting lineup of events and activities
+            that celebrate the rich and diverse cultural heritage of our college
+            community. Ecstasy 2023 will be held on 16, 17 & 18 March, 2023 at
+            Central Institute of Technology, Kokrajhar, and will feature a wide
+            range of performances, workshops, and interactive experiences. From
+            traditional music and dance to modern art and fashion, there's
+            something for everyone at Ecstasy 2023. Our festival is a
+            celebration of the unique and vibrant cultural identities that make
+            our college community so special. Through a variety of performances
+            and activities, we aim to promote understanding, respect, and
+            appreciation for the diverse cultures and traditions that enrich our
+            lives. So mark your calendars and get ready for an unforgettable
+            experience at Ecstasy 2023. We can't wait to see you there!
+          </p>
+        </div>
+      </section>
+
+      <!-- Mission Statement section -->
+      <section class="bg-white py-16 select-none pointer-events-none">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
+          >
+            Mission Statement
+          </h2>
+          <p class="text-gray-600 leading-relaxed px-10">
+            Our mission at Ecstasy 2023 is to celebrate the rich and diverse
+            cultural heritage of our college community through a series of
+            events and activities that promote understanding, respect, and
+            appreciation for the various cultures and traditions that make our
+            community unique. We strive to create an inclusive and welcoming
+            environment where everyone can come together to share in the joy of
+            art, music, dance, fashion, and more. Through our festival, we aim
+            to inspire creativity, foster cultural exchange, and strengthen the
+            bonds of our community.
+          </p>
+        </div>
+      </section>
+
+      <!-- Organizing Committee section -->
+      <section class="bg-gray-100 py-16 select-none pointer-events-none">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
+          >
+            Organizing Committee
+          </h2>
+          <div class="flex flex-wrap -mx-4 text-center">
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="../public/assets/organizing-committee/organizer1.jpeg"
+                alt="Organizer 1"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 1</h3>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="../public/assets/organizing-committee/organizer2.jpeg"
+                alt="Organizer 2"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 2</h3>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="../public/assets/organizing-committee/organizer3.jpeg"
+                alt="Organizer 3"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 3</h3>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="../public/assets/organizing-committee/organizer4.jpeg"
+                alt="Organizer 4"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 4</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsors section -->
+      <section class="bg-white py-16 select-none pointer-events-none">
+        <!--SPONSORS -->
+        <div id="secondary-content" class="md:pt-[3em] z-20 bg-white">
+          <section id="sponsor-container" class="">
+            <!-- <Carousel/> -->
+            <h1 class="text-center font-playfair text-4xl font-light">
+              Our Sponsors
+            </h1>
+            <div
+              id="sponsor-logo"
+              class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap pointer-events-none"
+            >
+              <img
+                src="/assets/sponsors/sponsor1.png"
+                alt="SBI"
+                class="w-[9rem]"
+              />
+              <img
+                src="/assets/sponsors/sponsor2.png"
+                alt="KTM"
+                class="w-[9rem]"
+              />
+              <img
+                src="/assets/sponsors/sponsor3.png"
+                alt="JAJABOR"
+                class="w-[9rem]"
+              />
+              <img
+                src="/assets/sponsors/sponsor4.png"
+                alt="Royal Enfield"
+                class="w-[9rem]"
+              />
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Contact Us button
+      <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4 text-center">
+          <a
+            href="#"
+            class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full"
+            >Contact Us</a
+          >
+        </div>
+      </section> -->
+    </main>
+  </div>
 </NonHomeLayout>
 
 <style>
-#background-img{
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		height: 100vh;
-		width: 100%;
-		background-image: url("/assets/space3.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		background-position: center;
-		filter: grayscale(30%);
-		filter: brightness(80%);
-	}
+  #background-img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/space3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    filter: grayscale(30%);
+    filter: brightness(80%);
+  }
 </style>
