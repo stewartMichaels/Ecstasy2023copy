@@ -1,9 +1,43 @@
 ---
 import NonHomeLayout from "../../layouts/NonHomeLayout.astro";
+import Card from "../../components/Card.astro";
 ---
 
 <NonHomeLayout>
-	<main>
-		<h1>Welcome to the Events Page</h1>
-	</main>
+	<div id="background-img" class="-z-30"></div>
+	<div id="wrapper" class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10">
+		<h1 class="text-5xl font-black font-playfair text-center text-slate-100">Explore The Events</h1>
+
+		<main class="mt-20">
+			<div id="event-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pb-10">
+				<Card eventNo="1" title="Concert by Artists" date="12/03/23" venue="Auditorium"/>
+				<Card eventNo="2" title="University Students Variety Shows" date="12/03/23" venue="Auditorium"/>
+				<Card eventNo="3" title="Drama Play" date="12/03/23" venue="Auditorium"/>
+				<Card eventNo="4" title="Bihu Performance" date="12/03/23" venue="Moon"/>
+				<Card eventNo="5" title="Flash Mob" date="12/03/23" venue="Mars"/>
+				<Card eventNo="6" title="Ramp Walk" date="12/03/23" venue="Earth"/>
+				<Card eventNo="7" title="Singing Competition" date="12/03/23" venue="Sun"/>
+				<Card eventNo="8" title="Dance Competition" date="12/03/23" venue="Jupiter"/>
+				<Card eventNo="9" title="Acting Competition" date="12/03/23" venue="Neptune"/>
+				<Card eventNo="10" title="Cultural Rally" date="12/03/23" venue="Venus"/>
+			</div>	
+		</main>
+	</div>
 </NonHomeLayout>
+
+<style>
+	#background-img{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		height: 100vh;
+		width: 100%;
+		background-image: url("/assets/party2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		object-fit: cover;
+		background-position: center;
+		filter: grayscale(30%);
+		filter: brightness(90%);
+	}
+</style>

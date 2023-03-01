@@ -7,6 +7,11 @@ module.exports = {
 				playfair: "'Playfair Display'",
 				poppins: "'Poppins'",
 			},
+			backgroundSize: {
+				'100%': '100%',
+				'160%': '160%',
+				'200%': '200%'
+			},
 		},
 	},
 	plugins: [],

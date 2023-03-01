@@ -1,6 +1,6 @@
 ---
-
-
+import Hamburger from "../components/Hamburger.astro";
+import NavLinks from "../components/NavLinks.astro";
 ---
 
 <!DOCTYPE html>
@@ -8,26 +8,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/assets/logo/logo4.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Ecstasy23</title>
 		 <link rel="preconnect" href="https://fonts.googleapis.com">
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+	
+
 	</head>
 	<body>
-		<header id="nav-container" class="max-w-[600px] md:max-w-[1300px] mx-auto flex justify-between items-center p-2 md:p-10 relative z-20">
-			<a href="/" class="text-3xl font-playfair">Ecstasy23</a>
-			<nav>
-				<ul class=" hidden md:flex gap-16 font-poppins text-white font-black">
-					<li><a href="./events">EVENTS</a></li>
-					<li><a href="./contests">CONTESTS</a></li>
-					<li><a href="./about">ABOUT</a></li>
-					<li><a href="./contact">CONTACT</a></li>
-				</ul>
-			</nav>
+		<header id="nav-container" class="max-w-[600px] md:max-w-[1300px] mx-auto flex justify-between items-center p-3 md:p-10 relative z-20">
+			<a href="/" class="text-3xl font-playfair text-white font-black"> <img id="logo" src="/assets/logo/logo1.png" alt="logo"> </a>
+			<Hamburger />
+			<NavLinks />
 		</header>
 		<slot />
+		<footer class="text-center font-poppins p-10 relative z-20 text-[#64748b] bg-white">
+			<p>Copyright © 2023 Central Institute of Technology Kokrajhar.</p>
+			<p>Made by [<a href="https://github.com/IslARY" target="_blank" class="font-playfair font-black">Winterson</a>&<a href="https://github.com/stewartMichaels" target="_blank" class="font-playfair font-black">Stewart</a>]</p>
+		</footer>
+	
+
 	</body>
 </html>
 
@@ -39,10 +41,14 @@
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: white;
+		background-bolor: white;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+	#logo{
+		height: 3.3em;
+		width: 5.7em;
 	}
 </style>

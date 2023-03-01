@@ -1,0 +1,58 @@
+---
+import NonHomeLayout from "../../layouts/NonHomeLayout.astro";
+import SportsCard from "../../components/SportsCard.astro";
+---
+
+<NonHomeLayout>
+	<div id="background-img" class="-z-30"></div>
+	<div id="wrapper" class=" w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10">
+		<h1 class="text-5xl font-playfair font-black text-center text-slate-100 pb-10">Explore Sports Events</h1>
+	<main>
+			<section id="group1" class="pb-2"><p class="text-white font-playfair text-2xl">OUTDOOR GAMES</p></section>
+			<div id="contest-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pb-10">
+				<SportsCard sportNo="1" title="Marathon" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="2" title="100m Race" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="3" title="400m Race" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="4" title="Relay Race" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="5" title="ShotPut" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="6" title="Javelin Throw" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="7" title="Long Jump" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="8" title="High Jump" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="9" title="Discus Throw" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="10" title="Football" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="11" title="Cricket" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="12" title="Basketball" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="13" title="Volleyball" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="14" title="Kabaddi" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="15" title="Tug of War" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="16" title="Treasure Hunt" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="17" title="Lawn Tennis" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="18" title="Weight Lifting" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+			</div>
+
+			<section id="group1" class="pb-2"><p class="text-white font-playfair text-2xl">INDOOR GAMES</p></section>
+			<div id="contest-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-10">
+				<SportsCard sportNo="1" title="Badminton" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="2" title="Chess" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="3" title="Carrom" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<SportsCard sportNo="4" title="Table Tennis" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+			</div>	
+	</main>
+	</div>
+</NonHomeLayout>
+<style>
+#background-img{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		height: 100vh;
+		width: 100%;
+		background-image: url("/assets/basketball2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		object-fit: cover;
+		background-position: center;
+		filter: grayscale(10%);
+		filter: brightness(80%);
+	}
+</style>

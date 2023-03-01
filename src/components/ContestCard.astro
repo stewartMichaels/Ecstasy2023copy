@@ -1,0 +1,43 @@
+---
+export interface Props {
+	contestNo: string;
+	title: string;
+	date: string;
+	venue: string;
+	coordinators?: string[];
+	regLink?: string;
+}
+
+const { contestNo, title, date, venue, coordinators, regLink = null } = Astro.props;
+---
+
+<section id={contestNo} class="flex flex-col font-poppins border-t-2 border-b-2 px-3 py-2 text-slate-100 overflow-x-hidden">
+	<p class="text-center pb-2"><strong>CONTEST {contestNo}</strong></p>
+	<div id="top">
+		<h1 id="title" title={title} class="truncate"><span class="text-slate-400">Title:</span> {title}</h1>
+		<p id="date"><span class="text-slate-400">Date:</span> {date}</p>
+		<p id="venue"><span class="text-slate-400">Venue:</span> {venue}</p>
+	
+		<p id="coordinators" title={coordinators.toString()} class="truncate"><span class="text-slate-400">Coordinators:</span> {coordinators.map((member)=>{
+				if(coordinators.indexOf(member)!==0){
+					return (`, ${member}`);
+				}else{
+					return (`${member}`);
+				}
+			}
+		)}
+		</p>
+	</div>
+	<div id="bottom" class="self-center py-3">
+		{
+		regLink ? <a href={regLink} class="relative self-center bg-slate-300 text-black font-black px-2 py-1 rounded">REGISTER</a>
+		: <a href={regLink} class="relative self-center bg-slate-600 text-black font-black px-2 py-1 rounded pointer-events-none">REGISTER</a>
+	}
+	</div>		
+</section>
+
+<style>
+	section{
+		backdrop-filter: blur(10px);
+	}
+</style>

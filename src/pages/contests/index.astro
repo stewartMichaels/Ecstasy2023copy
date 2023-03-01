@@ -1,9 +1,45 @@
 ---
 import NonHomeLayout from "../../layouts/NonHomeLayout.astro";
+import ContestCard from "../../components/ContestCard.astro";
 ---
 
 <NonHomeLayout>
-	<main>
-		<h1>Welcome to the Contests Page.</h1>
-	</main>
+	<div id="background-img" class="-z-30"></div>
+	<div id="wrapper" class=" w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10">
+		<h1 class="text-5xl font-playfair font-black text-center text-white">Explore The Contests</h1>
+
+		<main class="mt-20">	
+			<div id="contest-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pb-10">
+				<ContestCard contestNo="1" title="Quiz" date="12/03/23" venue="Auditorium" coordinators={["Rajarshi Seal","Alien",]} regLink="https://www.google.com"/>
+				<ContestCard contestNo="2" title="Debate" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<ContestCard contestNo="3" title="Storytelling" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<ContestCard contestNo="4" title="Essay Writing" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<ContestCard contestNo="5" title="Poem Recitation" date="12/03/23" venue="Auditorium" coordinators={["Jagriti Shivam"]}/>
+				<ContestCard contestNo="6" title="JAM Session" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<ContestCard contestNo="7" title="Treasure Hunt" date="12/03/23" venue="Auditorium" coordinators={["Rahul Dubey","Jyotishman Das"]}/>
+				<ContestCard contestNo="8" title="Art Competition" date="12/03/23" venue="Auditorium" coordinators={["Meghna Roy"]}/>
+				<ContestCard contestNo="9" title="Photography" date="12/03/23" venue="Auditorium" coordinators={["Sanjiv Malakar","Priya Dutta"]}/>
+				<ContestCard contestNo="10" title="Chai pe charcha (Group Discussion)" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<ContestCard contestNo="10" title="Rangoli Competition" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+				<ContestCard contestNo="10" title="Salad Competition" date="12/03/23" venue="Auditorium" coordinators={[]}/>
+			</div>			
+		</main>
+	</div>
 </NonHomeLayout>
+
+<style>
+	#background-img{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		height: 100vh;
+		width: 100%;
+		background-image: url("/assets/neon.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		object-fit: cover;
+		background-position: center;
+		filter: grayscale(30%);
+		filter: brightness(75%)
+	}
+</style>
