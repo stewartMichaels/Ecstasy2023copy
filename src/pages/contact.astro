@@ -3,27 +3,95 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
 ---
 
 <NonHomeLayout>
-	<div id="background-img" class="-z-30"></div>
-	<div id="wrapper" class=" w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10">
-		<h1 class="text-5xl font-playfair text-center text-slate-100">Contact Us</h1>
-	<main>
-		
-	</main>
-	</div>
+  <div id="background-img" class="-z-30"></div>
+  <div
+    id="wrapper"
+    class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10"
+  >
+    <h1 class="text-5xl font-playfair text-center text-slate-100">
+      Contact Us
+    </h1>
+
+    <main>
+      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div class="px-4 py-6 sm:px-0">
+          <div class="max-w-xl mx-auto">
+            <form
+              id="contact-form"
+              class="grid grid-cols-2 gap-4"
+              action="https://formspree.io/f/xwkjbobw"
+              method="POST"
+            >
+              <div>
+                <label class="block text-white font-bold mb-2" for="name">
+                  Name:
+                </label>
+                <input
+                  class="w-full border border-gray-400 p-2 mb-4"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-white font-bold mb-2" for="email">
+                  Email:
+                </label>
+                <input
+                  class="w-full border border-gray-400 p-2 mb-4"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="col-span-2">
+                <label class="block text-white font-bold mb-2" for="message">
+                  Message:
+                </label>
+                <textarea
+                  class="w-full border border-gray-400 p-2 mb-4"
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required></textarea>
+              </div>
+              <div class="col-span-2">
+                <button
+                  id="submit-button"
+                  class="bg-yellow-600 hover:bg-yellow-400 hover:text-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div id="success-message" class="hidden text-green-500 mt-4">
+              Your message has been sent successfully.
+            </div>
+            <div id="error-message" class="hidden text-red-500 mt-4">
+              Oops! Something went wrong. Please try again later.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 </NonHomeLayout>
 <style>
-#background-img{
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		height: 100vh;
-		width: 100%;
-		background-image: url("/assets/space3.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		background-position: center;
-		filter: grayscale(30%);
-		filter: brightness(80%)
-	}
+  #background-img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/space3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    filter: grayscale(30%);
+    filter: brightness(80%);
+  }
 </style>
