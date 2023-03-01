@@ -13,7 +13,9 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
     </h1> -->
     <main>
       <!-- Director's Message -->
-      <section class="bg-white py-16 select-none pointer-events-none">
+      <section
+        class="bg-white py-16 rounded-t-lg select-none pointer-events-none"
+      >
         <h2
           class="text-gray-800 mb-4 pb-10 font-playfair text-4xl font-light text-center"
         >
@@ -33,24 +35,17 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
                 class="text-gray-600 italic border-l-4 pl-4 border-gray-300"
               >
                 <p class="mb-4">
-                  "Welcome to Central Institute of Technology Kokrajhar, a
-                  premier institute located in Kokrajhar and one of the unique
-                  institutes under MoE (Formerly MHRD), Government of India. Our
-                  objectives are to provide quality education to the youth in
-                  all streams of engineering, technology, and vocational
-                  training. We also strive to develop a research and development
-                  culture that will ultimately lead to more industry
-                  partnerships, local innovation, and entrepreneurship. We are
-                  committed to implementing the salient features of the new
-                  education policy (NEP2020), which will enhance the overall
-                  quality of education and boost the economy of the region and
-                  the state. Aspiring students are encouraged to join us and
-                  pursue their objectives of life, as we build a network of
-                  excellence and extend our interactions with knowledge
-                  advancing partners. Together, we can create an intellectual
-                  society where the focus is on socio-economic growth and make
-                  notable contributions to the progress of the region and the
-                  nation."
+                  "Welcome to Central Institute of Technology Kokrajhar, an
+                  institute dedicated to providing quality education in
+                  engineering, technology, and vocational training. Our focus is
+                  on developing a research and development culture that leads to
+                  more industry partnerships, innovation, and entrepreneurship.
+                  We are committed to implementing the new education policy
+                  (NEP2020) and building a network of excellence with knowledge
+                  advancing partners to contribute to the progress of the region
+                  and the nation. Join us in pursuing your objectives of life
+                  and creating an intellectual society focused on socio-economic
+                  growth."
                 </p>
                 <cite
                   >- Prof. Hemanta Kumar Kalita
@@ -157,71 +152,44 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
         </div>
       </section>
 
-      <!-- Sponsors section -->
-      <section class="bg-white py-16 select-none pointer-events-none">
-        <!--SPONSORS -->
-        <div id="secondary-content" class="md:pt-[3em] z-20 bg-white">
-          <section id="sponsor-container" class="">
-            <!-- <Carousel/> -->
-            <h1 class="text-center font-playfair text-4xl font-light">
-              Our Sponsors
-            </h1>
-            <div
-              id="sponsor-logo"
-              class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap pointer-events-none"
-            >
-              <img
-                src="/assets/sponsors/sponsor1.png"
-                alt="SBI"
-                class="w-[9rem]"
-              />
-              <img
-                src="/assets/sponsors/sponsor2.png"
-                alt="KTM"
-                class="w-[9rem]"
-              />
-              <img
-                src="/assets/sponsors/sponsor3.png"
-                alt="JAJABOR"
-                class="w-[9rem]"
-              />
-              <img
-                src="/assets/sponsors/sponsor4.png"
-                alt="Royal Enfield"
-                class="w-[9rem]"
-              />
-            </div>
-          </section>
+      <!-- Map to College -->
+      <section class="bg-gray-100 py-16 rounded-b-lg">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
+          >
+            Our Location
+          </h2>
+          <div class="w-full h-96 rounded-lg border-2">
+            <iframe
+              class="w-full h-full rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.3070762469947!2d90.30044981545717!3d26.478055985039564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3758f4d277d13e8d%3A0x233749495bfdb465!2sCentral%20Institute%20of%20Technology%2C%20Kokrajhar!5e0!3m2!1sen!2sin!4v1677676861572!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </section>
-
-      <!-- Contact Us button
-      <section class="bg-gray-100 py-8">
-        <div class="container mx-auto px-4 text-center">
-          <a
-            href="#"
-            class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full"
-            >Contact Us</a
-          >
-        </div>
-      </section> -->
     </main>
   </div>
-</NonHomeLayout>
 
-<style>
-  #background-img {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url("/assets/space3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: center;
-    filter: grayscale(30%);
-    filter: brightness(80%);
-  }
-</style>
+  <style>
+    #background-img {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 100%;
+      background-image: url("/assets/space3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-position: center;
+      filter: grayscale(30%);
+      filter: brightness(80%);
+    }
+  </style>
+</NonHomeLayout>
