@@ -42,17 +42,26 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
               class="bg-slate-900 w-full py-2 px-4 rounded-md border-gray-300 focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent text-white"
             />
           </div>
+
+          <!-- Message Box -->
           <div class="mb-4">
             <label for="message" class="sr-only">Message</label>
             <textarea
               name="message"
               id="message"
               rows="5"
-              placeholder="Message"
+              placeholder="Message - Limit Less Than 500 Words"
               required
+              maxlength="1000"
               class="bg-slate-900 w-full py-2 px-4 rounded-md border-gray-300 focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent text-white resize-none"
             ></textarea>
+            <span id="message-counter" class="text-sm text-gray-400"></span>
+            <span id="message-error" class="text-sm text-red-500 hidden"
+              >Message exceeds 1000 words.</span
+            >
           </div>
+
+          <!-- Submit Button -->
           <div class="text-right">
             <button
               type="submit"
@@ -66,6 +75,26 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
   </div>
 </NonHomeLayout>
 
+<!-- Error Message Script -->
+<script>
+  const messageTextarea = document.getElementById(
+    "message"
+  ) as HTMLTextAreaElement;
+  const messageCounter = document.getElementById("message-counter");
+  const messageError = document.getElementById("message-error");
+
+  messageTextarea.addEventListener("input", function () {
+    const messageLength = messageTextarea.value.split(" ").length;
+    messageCounter.textContent = `${messageLength} words`;
+    if (messageLength > 1000) {
+      messageError.classList.remove("hidden");
+    } else {
+      messageError.classList.add("hidden");
+    }
+  });
+</script>
+
+<!-- Css -->
 <style>
   #background-img {
     position: fixed;
