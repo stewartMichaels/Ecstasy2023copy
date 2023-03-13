@@ -1,71 +1,25 @@
 ---
-import NonHomeLayout from "../layouts/NonHomeLayout.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<NonHomeLayout>
+<Layout>
   <div id="background-img" class="-z-30"></div>
   <div
     id="wrapper"
-    class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10"
+    class="w-full mx-auto md:max-w-[1300px] mt-16 pt-10 md:pt-20 md:mt-[5em] px-2 md:px-10"
   >
-    <!-- <h1 class="text-5xl font-playfair text-center text-slate-100 pb-10">
-      About Us
-    </h1> -->
-    <main>
-      <!-- Director's Message -->
-      <section
-        class="bg-white py-16 rounded-t-lg select-none pointer-events-none"
-      >
-        <h2
-          class="text-gray-800 mb-4 pb-10 font-playfair text-4xl font-light text-center"
-        >
-          Word from our Director
-        </h2>
-        <div class="container mx-auto px-10">
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-1/3 flex items-baseline justify-center">
-              <img
-                src="/assets/board/director-image.jpeg"
-                alt="Director Image"
-                class="w-full rounded-full md:w-3/4"
-              />
-            </div>
-            <div class="w-full md:w-2/3 md:pl-16 mt-8 md:mt-0">
-              <blockquote
-                class="text-gray-600 italic border-l-4 pl-4 border-gray-300"
-              >
-                <p class="mb-4">
-                  "Welcome to Central Institute of Technology Kokrajhar, an
-                  institute dedicated to providing quality education in
-                  engineering, technology, and vocational training. Our focus is
-                  on developing a research and development culture that leads to
-                  more industry partnerships, innovation, and entrepreneurship.
-                  We are committed to implementing the new education policy
-                  (NEP2020) and building a network of excellence with knowledge
-                  advancing partners to contribute to the progress of the region
-                  and the nation. Join us in pursuing your objectives of life
-                  and creating an intellectual society focused on socio-economic
-                  growth."
-                </p>
-                <cite
-                  >- Prof. Hemanta Kumar Kalita
-                  <p class="text-gray-500">Director (i/c), CIT Kokrajhar</p>
-                </cite>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main id="outer-container">
+      <section id="inner-container" class="bg-white">
 
       <!-- Event Overview section -->
-      <section class="bg-gray-100 py-16 select-none pointer-events-none">
-        <div class="container mx-auto px-4">
+      <section class="bg-gray-100 py-16 select-none pointer-events-none rounded-lg">
+        <div class="container mx-auto px-5 md:px-10 lg:px-20">
           <h2
             class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
           >
-            Event Overview
+            Event Overview.
           </h2>
-          <p class="text-gray-600 leading-relaxed px-10">
+          <p class="text-gray-600 leading-relaxed text-[1rem] font-sans">
             Welcome to Ecstasy 2023, the most anticipated cultural festival of
             the year! This year, our festival promises to be bigger and better
             than ever before, with an exciting lineup of events and activities
@@ -87,13 +41,13 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
 
       <!-- Mission Statement section -->
       <section class="bg-white py-16 select-none pointer-events-none">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-5 md:px-10 lg:px-20">
           <h2
             class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
           >
-            Mission Statement
+            Mission Statement.
           </h2>
-          <p class="text-gray-600 leading-relaxed px-10">
+          <p class="text-gray-600 leading-relaxed font-sans text-[1rem]">
             Our mission at Ecstasy 2023 is to celebrate the rich and diverse
             cultural heritage of our college community through a series of
             events and activities that promote understanding, respect, and
@@ -106,60 +60,12 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
           </p>
         </div>
       </section>
-
-      <!-- Organizing Committee section -->
-      <section class="bg-gray-100 py-16 select-none pointer-events-none">
-        <div class="container mx-auto px-4">
-          <h2
-            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
-          >
-            Organizing Committee
-          </h2>
-          <div class="flex flex-wrap -mx-4 text-center">
-            <div class="w-full md:w-1/4 px-4 mb-8">
-              <img
-                src="/assets/organizing-committee/organizer1.jpeg"
-                alt="Organizer 1"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">Organizer 1</h3>
-            </div>
-            <div class="w-full md:w-1/4 px-4 mb-8">
-              <img
-                src="/assets/organizing-committee/organizer2.jpeg"
-                alt="Organizer 2"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">Organizer 2</h3>
-            </div>
-            <div class="w-full md:w-1/4 px-4 mb-8">
-              <img
-                src="/assets/organizing-committee/organizer3.jpeg"
-                alt="Organizer 3"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">Organizer 3</h3>
-            </div>
-            <div class="w-full md:w-1/4 px-4 mb-8">
-              <img
-                src="/assets/organizing-committee/organizer4.jpeg"
-                alt="Organizer 4"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">Organizer 4</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Map to College -->
+    </section>
+     <!-- Map to College -->
       <section class="bg-gray-100 py-16 rounded-b-lg">
         <div class="container mx-auto px-4">
-          <h2
-            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
-          >
-            Our Location
-          </h2>
+            <h1 class="text-center font-serif text-3xl">Visit Us At</h1>
+            <p class="text-black text-2xl font-serif text-center pb-10">Central Institute of Technology, Kokrajhar, Balagaon Pt-I, Assam</p>
           <div class="w-full h-96 rounded-lg border-2">
             <iframe
               class="w-full h-full rounded-lg"
@@ -177,7 +83,7 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
   </div>
 
   <style>
-    #background-img {
+    /* #background-img {
       position: fixed;
       top: 0;
       bottom: 0;
@@ -190,6 +96,6 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
       background-position: center;
       filter: grayscale(30%);
       filter: brightness(80%);
-    }
+    } */
   </style>
-</NonHomeLayout>
+</Layout>

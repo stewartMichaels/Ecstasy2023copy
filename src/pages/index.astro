@@ -4,38 +4,30 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div id="wrapper" class="relative">
+  <div
+    id="wrapper" class="relative">
     <div id="background-img" class="-z-30"></div>
 
     <main
       id="primary-content"
-      class="mx-auto w-full md:max-w-[1300px] relative z-19 flex flex-col mt-20 md:mt-0 md:pt-[6em] md:flex-row gap-1 md:gap-10 px-2 md:px-10"
-    >
+      class="mx-auto w-full md:max-w-[1300px] relative z-19 flex flex-col mt-20 md:mt-0 md:pt-[10em] md:flex-row gap-1 md:gap-10 px-2 md:px-10">
       <div id="left-col" class="w-full md:w-6/12">
         <section id="hero">
-          <h1 class="h1custom font-bold text-white text-6xl font-playfair pb-2">
+          <h1 class="h1custom font-bold  text-white text-6xl font-playfair pb-2">
             Come Get Lost in the Madness!
           </h1>
-          <span
-            class="text-white uppercase font-black text-6xl lg:text-7xl pb-2"
+          <span class="text-white uppercase font-black text-6xl lg:text-7xl pb-2"
             >ECSTASY23
           </span>
-          <p class="text-3xl uppercase pt-2 text-white font-poppins">
-            Cultural Festival
-          </p>
+          <p class="text-3xl uppercase pt-2 text-white font-poppins">Cultural Festival</p>
         </section>
-        <p
-          class="instructions font-poppins w-full lg:w-[90%] text-white text-[0.8rem] md:text-[1.1rem]"
-        >
-          Get ready for <strong>Ecstasy 2023</strong> - a cultural fest with trending
-          activities, amazing performances and a vibe that rocks! Don't miss out
-          on the good times.
+        <p class="instructions font-poppins w-full lg:w-[90%] text-white text-[0.9rem] md:text-[1.1rem]">
+          Get ready for <strong>Ecstasy 2023</strong> - a cultural fest with trending activities, amazing performances and a vibe that rocks! Don't miss out on the good times.
         </p>
       </div>
       <div
         id="right-col"
-        class="grow flex flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em]"
-      >
+        class=" grow flex flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em]">
         <div class="link-card card1 items-end font-poppins text-[0.9rem]">
           <a href="./events">
             <h2>
@@ -45,23 +37,19 @@ import Layout from "../layouts/Layout.astro";
             <p>Participate in Variety of Events!</p>
           </a>
         </div>
-        <div
-          class="link-card card2 h-auto items-end font-poppins text-[0.9rem]"
-        >
+        <div class="link-card card2 h-auto items-end font-poppins text-[0.9rem]">
           <a href="./contests">
             <h2>
-              <strong>CONTESTS</strong>
+              <strong>CONTESTS</strong> 
               <span>&rarr;</span>
             </h2>
             <p>Participate in Variety of Events!</p>
           </a>
         </div>
-        <div
-          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]"
-        >
+        <div class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]">
           <a href="./sports" class="">
             <h2>
-              <strong>SPORTS EVENTS</strong>
+              <strong>SPORTS EVENTS</strong> 
               <span>&rarr;</span>
             </h2>
             <p>Participate in Variety of Events!</p>
@@ -69,57 +57,94 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </main>
-  </div>
+    </div>
 
   <!--QUOTE -->
-  <div
-    id="quote"
-    class="mt-[5em] md:mt-[10em] z-20 min-h-[15em] flex flex-col md:flex-row mx-auto p-5 pt-10 md:pt-20 md:p-10 justify-center gap-10 md:gap-20 items-center bg-white select-none pointer-events-none"
-  >
+  <div id="quote" class="mt-[5em] md:mt-[10em] z-20 min-h-[15em] flex flex-col md:flex-row mx-auto p-5 pt-10 md:p-10 justify-center gap-10 md:gap-20 items-center bg-white">
     <section id="left-body" class="">
-      <img
-        src="/assets/heroImg1.webp"
-        alt="organizer's image"
-        class="rounded-full md:rounded-lg w-[13em] pointer-events-none"
-      />
+      <img src="/assets/board/director-image.jpeg" alt="organizer's image" class="rounded-full w-[14em] pointer-events-none">
     </section>
-    <section id="right-body" class="w-full md:w-5/12">
+   <section id="right-body" class="w-full md:w-6/12">
       <p class="font-playfair italic font-light text-[1.2rem]">
-        <span class="font-black">"</span>Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Nemo nulla molestiae error iste magni unde porro
-        voluptas? Sapiente quo enim similique tempora soluta architecto nemo
-        vero qui. Soluta quae corrupti dolorum atque et rerum tempore? Vel
-        quaerat dolore natus excepturi obcaecati suscipit accusantium sequi
-        adipisci commodi consequuntur blanditiis nobis voluptates debitis rerum
-        architecto praesentium <span class="font-black">"</span>
+        <blockquote class="text-black text-[1.1rem] italic border-l-4 pl-4 border-gray-300">
+                <p class="mb-4">
+                  "Welcome to Central Institute of Technology Kokrajhar, an
+                  institute dedicated to providing quality education in
+                  engineering, technology, and vocational training. Our focus is
+                  on developing a research and development culture that leads to
+                  more industry partnerships, innovation, and entrepreneurship.
+                  We are committed to implementing the new education policy
+                  (NEP2020) and building a network of excellence with knowledge
+                  advancing partners to contribute to the progress of the region
+                  and the nation. Join us in pursuing your objectives of life
+                  and creating an intellectual society focused on socio-economic
+                  growth."
+                </p>
+                <cite
+                  >- Prof. Hemanta Kumar Kalita
+                  <p class="text-gray-500">Director (i/c), CIT Kokrajhar</p>
+                </cite>
+              </blockquote>
       </p>
     </section>
   </div>
+  <!-- Organizing Committee section -->
+      <section class="bg-gray-100 pt-10 select-none pointer-events-none">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-gray-800 mb-4 text-center pb-20 font-poppins text-4xl font-medium"
+          >
+          COMMITTEE MEMBERS
+          </h2>
+          <div class="flex flex-wrap -mx-4 text-center pb-20">
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="/assets/organizing-committee/organizer1.jpeg"
+                alt="Organizer 1"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 1</h3>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="/assets/organizing-committee/organizer2.jpeg"
+                alt="Organizer 2"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 2</h3>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="/assets/organizing-committee/organizer3.jpeg"
+                alt="Organizer 3"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 3</h3>
+            </div>
+            <div class="w-full md:w-1/4 px-4 mb-8">
+              <img
+                src="/assets/organizing-committee/organizer4.jpeg"
+                alt="Organizer 4"
+                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+              />
+              <h3 class="text-lg font-medium text-gray-800">Organizer 4</h3>
+            </div>
+          </div>
+        </div>
+      </section>
   <!--SPONSORS -->
-  <div id="secondary-content" class="md:pt-[3em] z-20 bg-white">
-    <section id="sponsor-container" class="">
-      <!-- <Carousel/> -->
-      <h1 class="text-center font-playfair text-4xl font-light">
-        Our Sponsors
-      </h1>
-      <div
-        id="sponsor-logo"
-        class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap pointer-events-none"
-      >
-        <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="w-[9rem]" />
-        <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="w-[9rem]" />
-        <img
-          src="/assets/sponsors/sponsor3.png"
-          alt="JAJABOR"
-          class="w-[9rem]"
-        />
-        <img
-          src="/assets/sponsors/sponsor4.png"
-          alt="Royal Enfield"
-          class="w-[9rem]"
-        />
-      </div>
-    </section>
+  <div id="secondary-content" class="pt-10 md:pt-[3em] z-20 bg-white">
+      <section id="sponsor-container" class="">
+        <!-- <Carousel/> -->
+        <h1 class="text-center font-poppins text-4xl font-medium">SPONSORS</h1>
+        <div id="sponsor-logo" class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap pointer-events-none">
+          <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="w-[9rem]">
+          <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="w-[9rem]">
+          <img src="/assets/sponsors/sponsor3.png" alt="JAJABOR" class="w-[9rem]">
+          <img src="/assets/sponsors/sponsor4.png" alt="Royal Enfield" class="w-[9rem]">
+          <img src="/assets/sponsors/swaglok.png" alt="Swaglok" class="w-[9rem]">
+        </div>
+      </section>
   </div>
 </Layout>
 
@@ -127,15 +152,8 @@ import Layout from "../layouts/Layout.astro";
   body {
     overflow-x: hidden;
   }
-  #quote {
-    /*
-      background-image: url("/assets/logo/logo4.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 15%; 
-    */
-  }
-  #sponsor-logo img {
+
+  #sponsor-logo img{
     aspect-ratio: 2/2;
     object-fit: contain;
   }
@@ -154,7 +172,7 @@ import Layout from "../layouts/Layout.astro";
   .instructions {
     line-height: 1.6;
     margin: 1rem 0;
-    border: 1px solid white;
+    border: 2px solid whitesmoke;
     background-color: transparent;
     backdrop-filter: blur(10px);
     padding: 1rem;
@@ -167,22 +185,22 @@ import Layout from "../layouts/Layout.astro";
   }
   .card1 {
     grid-area: left;
-    background-image: url("/assets/party.jpg");
+    background-image: url('/assets/party.jpg');
     background-position: -50px -160px;
     background-repeat: no-repeat;
     filter: grayscale(40%);
   }
-  .card2 {
-    background-image: url("/assets/contest.jpg");
-    background-position: -50px -130px;
-    filter: grayscale(40%);
+  .card2{
+     background-image: url('/assets/contest.jpg');
+     background-position: -50px -130px;
+     filter: grayscale(40%);
   }
-  .card3 {
-    background-image: url("/assets/football.jpg");
-    background-position: -50px -150px;
-    filter: grayscale(40%);
+  .card3{
+     background-image: url('/assets/football.jpg');
+     background-position: -50px -150px;
+     filter: grayscale(40%);
   }
-
+ 
   /*PreDefined */
   .link-card {
     list-style: none;
@@ -191,7 +209,7 @@ import Layout from "../layouts/Layout.astro";
     object-fit: contain;
     background-color: white;
     background-size: 150%;
-    border: 2px solid white;
+    border: 4px solid black;
     border-radius: 0.6rem;
     transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     transition: background-size 0.2s ease-in-out;
@@ -227,17 +245,17 @@ import Layout from "../layouts/Layout.astro";
     color: #3b82f6;
   }
 
-  #background-img {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url("/assets/party3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    background-position: center;
-    filter: grayscale(30%);
-  }
+  #background-img{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		height: 100vh;
+		width: 100%;
+		background-image: url("/assets/party3.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		object-fit: contain;
+		background-position: center;
+		filter: grayscale(30%);
+	}
 </style>
