@@ -4,29 +4,39 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-<div id="background-vid" class=" h-[20vh] w-[100vw] bg-cover md:bg-cover relative top-[-5.7em]">
-</div>
-<!--HERO SECTION -->
+  <div
+    id="background-vid"
+    class="h-[20vh] w-[100vw] bg-cover md:bg-cover relative top-[-5.7em]"
+  >
+  </div>
+  <!--HERO SECTION -->
   <div id="wrapper" class="relative md:pt-[5em] pb-[2em] md:pb-[10em]">
     <div id="background-img" class="-z-30"></div>
     <main
       id="primary-content"
-      class="mx-auto w-full md:max-w-[1300px] relative z-19 mt-30 md:mt-0 px-2 md:px-10 justify-center">
+      class="mx-auto w-full md:max-w-[1300px] relative z-19 mt-30 md:mt-0 px-2 md:px-10 justify-center"
+    >
       <div id="left-col" class="w-full flex flex-col justify-center">
         <section id="hero" class="self-center">
-          <h1 class="font-light  text-black text-center text-5xl font-playfair pb-2">
+          <h1
+            class="font-light text-black text-center text-5xl font-playfair pb-2"
+          >
             COME GET LOST IN THE MADNESS!
           </h1>
           <h1
             class="text-black uppercase text-center font-black text-6xl lg:text-7xl pb-2 font-sans"
-            >ECSTASY23
+          >
+            ECSTASY23
           </h1>
-          <p class="text-3xl uppercase pt-2 text-center text-black font-serif mb-4">
+          <p
+            class="text-3xl uppercase pt-2 text-center text-black font-serif mb-4"
+          >
             Cultural Festival
           </p>
         </section>
         <p
-          class="w-full border-t-2 border-b-2  border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center rounded-xl">
+          class="w-full border-t-2 border-b-2 border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center rounded-xl"
+        >
           Get ready for <strong>Ecstasy 2023</strong> - a cultural fest with trending
           activities, amazing performances and a vibe that rocks! Don't miss out
           on the good times.
@@ -34,208 +44,281 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </main>
   </div>
-<!--END-->
+  <!--END-->
 
-    <!-- <section class="flex item-center justify-center">
+  <!-- <section class="flex item-center justify-center">
         <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
     </section> -->
 
-<!--EVENT CARD SECTION -->
-<div id="explore-container" class="lg:py-10 relative overflow-clip">
-    <img id="flower" src="/assets/image1.jpg" alt="flower" class="h-[30.5em] absolute -right-[15em] -top-2 -z-30">
-    <img id="flower" src="/assets/image1.jpg" alt="flower" class="h-[30.5em] absolute -z-30 -left-[15em] -top-2">
-  <h1 class="font-playfair text-center lg:hidden text-black font-light text-7xl pt-5 z-20">
-        EXPLORE!!
-  </h1>
-  <div id="block-continer" class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[5em]">
+  <!--EVENT CARD SECTION -->
+  <div id="explore-container" class="lg:py-10 relative overflow-clip">
+    <img
+      id="flower"
+      src="/assets/image1.jpg"
+      alt="flower"
+      class="h-[30.5em] absolute -right-[15em] -top-2 -z-30"
+    />
+    <img
+      id="flower"
+      src="/assets/image1.jpg"
+      alt="flower"
+      class="h-[30.5em] absolute -z-30 -left-[15em] -top-2"
+    />
+    <h1
+      class="font-playfair text-center lg:hidden text-black font-light text-7xl pt-5 z-20"
+    >
+      EXPLORE!!
+    </h1>
+    <div
+      id="block-continer"
+      class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[5em]"
+    >
       <section class="self-center hidden lg:flex lg:flex-col">
-      <h1 class="font-playfair text-black font-light text-7xl pb-3 self-center">
-        EXPLORE!!
-      </h1>
-      <p class="text-3xl font-light font-poppins self-center">PARTICIPATE IN VARIOUS</p>
-      <p class="text-2xl font-light font-poppins pb-5 self-center">CONTESTS AND EVENTS.</p>
-      <a href="./about" class=" bg-red-200 px-16 py-2 font-black font-playfair rounded-full text-2xl self-center">INFO.</a>
+        <h1
+          class="font-playfair text-black font-light text-7xl pb-3 self-center"
+        >
+          EXPLORE!!
+        </h1>
+        <p class="text-3xl font-light font-poppins self-center">
+          PARTICIPATE IN VARIOUS
+        </p>
+        <p class="text-2xl font-light font-poppins pb-5 self-center">
+          CONTESTS AND EVENTS.
+        </p>
+        <a
+          href="./about"
+          class="bg-red-200 px-16 py-2 font-black font-playfair rounded-full text-2xl self-center"
+          >INFO.</a
+        >
       </section>
       <section
-          id="right-col"
-          class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-[1em]"
+        id="right-col"
+        class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-[1em]"
+      >
+        <div class="link-card card1 items-end font-poppins text-[0.9rem]">
+          <a href="./events">
+            <h2>
+              <strong>CULTURAL EVENTS</strong>
+              <span>&rarr;</span>
+            </h2>
+            <p>Participate in Variety of Events!</p>
+          </a>
+        </div>
+        <div
+          class="link-card card2 h-auto items-end font-poppins text-[0.9rem]"
         >
-          <div class="link-card card1 items-end font-poppins text-[0.9rem]">
-            <a href="./events">
-              <h2>
-                <strong>CULTURAL EVENTS</strong>
-                <span>&rarr;</span>
-              </h2>
-              <p>Participate in Variety of Events!</p>
-            </a>
-          </div>
-          <div
-            class="link-card card2 h-auto items-end font-poppins text-[0.9rem]"
-          >
-            <a href="./contests">
-              <h2>
-                <strong>CONTESTS</strong>
-                <span>&rarr;</span>
-              </h2>
-              <p>Participate in Variety of Events!</p>
-            </a>
-          </div>
-          <div
-            class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]"
-          >
-            <a href="./sports" class="">
-              <h2>
-                <strong>SPORTS EVENTS</strong>
-                <span>&rarr;</span>
-              </h2>
-              <p>Participate in Variety of Events!</p>
-            </a>
-          </div>
-        </section>
+          <a href="./contests">
+            <h2>
+              <strong>CONTESTS</strong>
+              <span>&rarr;</span>
+            </h2>
+            <p>Participate in Variety of Events!</p>
+          </a>
+        </div>
+        <div
+          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]"
+        >
+          <a href="./sports" class="">
+            <h2>
+              <strong>SPORTS EVENTS</strong>
+              <span>&rarr;</span>
+            </h2>
+            <p>Participate in Variety of Events!</p>
+          </a>
+        </div>
+      </section>
     </div>
   </div>
-<!--END -->
-    <!-- <section class="flex item-center justify-center">
+  <!--END -->
+  <!-- <section class="flex item-center justify-center">
         <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
     </section> -->
 
-<!--MERCH SECTION -->
+  <!--MERCH SECTION -->
   <div id="merch-container" class="py-5 bg-[#191919] text-white">
     <h1 class="text-center text-4xl pb-5 font-poppins font-black px-5">
-     GRAB A MERCH!!
+      GRAB A MERCH!!
     </h1>
-    <section id="merch-div" class="hidden sm:flex flex-wrap justify-center items-center gap-2">
-      <img src="/assets/merch/shirt1.jpg" alt="T-Shirt" class="h-[15em] rounded-md">
-      <img src="/assets/merch/shirt2.jpg" alt="T-Shirt" class="h-[15em] rounded-md">
-      <img src="/assets/merch/shirt3.jpg" alt="T-Shirt" class="h-[15em] rounded-md">
+    <section
+      id="merch-div"
+      class="hidden sm:flex flex-wrap justify-center items-center gap-2"
+    >
+      <img
+        src="/assets/merch/shirt1.jpg"
+        alt="T-Shirt"
+        class="h-[15em] rounded-md"
+      />
+      <img
+        src="/assets/merch/shirt2.jpg"
+        alt="T-Shirt"
+        class="h-[15em] rounded-md"
+      />
+      <img
+        src="/assets/merch/shirt3.jpg"
+        alt="T-Shirt"
+        class="h-[15em] rounded-md"
+      />
     </section>
     <section class="sm:hidden">
-      <Carousel/>
+      <Carousel />
     </section>
     <h1 class="text-center text-l font-poppins font-bold pt-5 text-slate-400">
-     CONTACT: 9954897236
+      CONTACT: 9954897236
     </h1>
-    <h1 class="text-center text-sm font-poppins font-bold text-slate-500">IGNATIUS BASUMATARY</h1>
+    <h1 class="text-center text-sm font-poppins font-bold text-slate-500">
+      IGNATIUS BASUMATARY
+    </h1>
   </div>
-<!--END -->
+  <!--END -->
 
   <section class="flex item-center justify-center">
-      <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
+    <div
+      id="margin"
+      class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"
+    >
+    </div>
   </section>
 
-
-<!--QUOTE -->
+  <!--QUOTE -->
   <div
     id="quote"
-    class="z-20 min-h-[15em]  mx-auto p-5 md:p-10  select-none pointer-events-none mb-[5em]">
-     <h2 class="text-gray-800 mb-4 text-center pt-10 pb-10 font-poppins text-4xl font-light" >MESSAGE FROM DIRECTOR</h2>
-    <section class="flex flex-col md:flex-row justify-center gap-10 items-center">
-        <section id="left-body" class="">
-          <img
-            src="/assets/board/director-image.jpeg"
-            alt="organizer's image"
-            class="rounded-full md:rounded-full w-[10em] md:w-[13em] pointer-events-none border-2 border-white"
-          />
-        </section>
-        <section id="right-body" class="w-full lg:w-[50em]">
-          <p class="font-playfair italic font-light text-[1.2rem]">
-            <blockquote class="text-black text-[1rem] italic border-l-4 pl-4 border-gray-300">
-                    <p class="mb-4">
-                      "Welcome to Central Institute of Technology Kokrajhar, an
-                      institute dedicated to providing quality education in
-                      engineering, technology, and vocational training. Our focus is
-                      on developing a research and development culture that leads to
-                      more industry partnerships, innovation, and entrepreneurship.
-                      We are committed to implementing the new education policy
-                      (NEP2020) and building a network of excellence with knowledge
-                      advancing partners to contribute to the progress of the region
-                      and the nation. Join us in pursuing your objectives of life
-                      and creating an intellectual society focused on socio-economic
-                      growth."
-                    </p>
-                    <cite
-                      >- Prof. Hemanta Kumar Kalita
-                      <p class="text-gray-500">Director (i/c), CIT Kokrajhar</p>
-                    </cite>
-                  </blockquote>
-          </p>
-        </section>
+    class="z-20 min-h-[15em] mx-auto p-5 md:p-10 select-none pointer-events-none mb-[5em]"
+  >
+    <h2
+      class="text-gray-800 mb-4 text-center pt-10 pb-10 font-poppins text-4xl font-light"
+    >
+      MESSAGE FROM DIRECTOR
+    </h2>
+    <section
+      class="flex flex-col md:flex-row justify-center gap-10 items-center"
+    >
+      <section id="left-body" class="">
+        <img
+          src="/assets/board/director-image.jpeg"
+          alt="organizer's image"
+          class="rounded-full md:rounded-full w-[10em] md:w-[13em] pointer-events-none border-2 border-white"
+        />
       </section>
+      <section id="right-body" class="w-full lg:w-[50em]">
+        <p class="font-playfair italic font-light text-[1.2rem]">
+          <blockquote
+            class="text-black text-[1rem] italic border-l-4 pl-4 border-gray-300"
+          >
+            <p class="mb-4">
+              "Welcome to Central Institute of Technology Kokrajhar, an
+              institute dedicated to providing quality education in engineering,
+              technology, and vocational training. Our focus is on developing a
+              research and development culture that leads to more industry
+              partnerships, innovation, and entrepreneurship. We are committed
+              to implementing the new education policy (NEP2020) and building a
+              network of excellence with knowledge advancing partners to
+              contribute to the progress of the region and the nation. Join us
+              in pursuing your objectives of life and creating an intellectual
+              society focused on socio-economic growth."
+            </p>
+            <cite
+              >- Prof. Hemanta Kumar Kalita
+              <p class="text-gray-500">Director (i/c), CIT Kokrajhar</p>
+            </cite>
+          </blockquote>
+        </p>
+      </section>
+    </section>
   </div>
-<!--END -->
+  <!--END -->
 
- <section id="margin" class="flex item-center justify-center">
-      <div class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
+  <section id="margin" class="flex item-center justify-center">
+    <div class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full">
+    </div>
   </section>
 
-<!--COMMITTEE SECTION-->
-  <section class=" py-16 select-none pointer-events-none">
-      <div class="container mx-auto px-4">
-          <h2 class="text-gray-800 mb-4 text-center pb-10 md:pb-20 font-poppins text-4xl font-black">
-          COMMITTEE MEMBERS
-          </h2>
-          <div class="flex flex-wrap justify-center items-center gap-10 text-center">
-              <div class="">
-                <img
-                  src="/assets/organizing-committee/organizer1.jpeg"
-                  alt="Organizer 1"
-                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-                />
-                <h3 class="text-lg font-medium text-gray-800">MEMBER 1</h3>
-              </div>
-              <div class="">
-                <img
-                  src="/assets/organizing-committee/organizer2.jpeg"
-                  alt="Organizer 2"
-                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-                />
-                <h3 class="text-lg font-medium text-gray-800">MEMBER 2</h3>
-              </div>
-              <div class="">
-                <img
-                  src="/assets/organizing-committee/organizer3.jpeg"
-                  alt="Organizer 3"
-                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-                />
-                <h3 class="text-lg font-medium text-gray-800">MEMBER 3</h3>
-              </div>
-              <div class="">
-                <img
-                  src="/assets/organizing-committee/organizer4.jpeg"
-                  alt="Organizer 4"
-                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-                />
-                <h3 class="text-lg font-medium text-gray-800">MEMBER 4</h3>
-              </div>
-            </div>
+  <!--COMMITTEE SECTION-->
+  <section class="py-16 select-none pointer-events-none">
+    <div class="container mx-auto px-4">
+      <h2
+        class="text-gray-800 mb-4 text-center pb-10 md:pb-20 font-poppins text-4xl font-black"
+      >
+        COMMITTEE MEMBERS
+      </h2>
+      <div
+        class="flex flex-wrap justify-center items-center gap-10 text-center"
+      >
+        <div class="">
+          <img
+            src="/assets/organizing-committee/organizer1.jpeg"
+            alt="Organizer 1"
+            class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+          />
+          <h3 class="text-lg font-medium text-gray-800">MEMBER 1</h3>
+        </div>
+        <div class="">
+          <img
+            src="/assets/organizing-committee/organizer2.jpeg"
+            alt="Organizer 2"
+            class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+          />
+          <h3 class="text-lg font-medium text-gray-800">MEMBER 2</h3>
+        </div>
+        <div class="">
+          <img
+            src="/assets/organizing-committee/organizer3.jpeg"
+            alt="Organizer 3"
+            class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+          />
+          <h3 class="text-lg font-medium text-gray-800">MEMBER 3</h3>
+        </div>
+        <div class="">
+          <img
+            src="/assets/organizing-committee/organizer4.jpeg"
+            alt="Organizer 4"
+            class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+          />
+          <h3 class="text-lg font-medium text-gray-800">MEMBER 4</h3>
+        </div>
       </div>
+    </div>
   </section>
-<!--END -->
+  <!--END -->
 
   <section class="flex item-center justify-center">
-      <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
+    <div
+      id="margin"
+      class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"
+    >
+    </div>
   </section>
 
-<!--SPONSORS -->
-  <div id="secondary-content" class=" py-16 z-20 bg-white">
+  <!--SPONSORS -->
+  <div id="secondary-content" class="py-16 z-20 bg-white">
     <section id="sponsor-container" class="">
       <h1 class="text-center font-poppins text-4xl font-black pb-10 md:pb-20">
-      SPONSORS
+        SPONSORS
       </h1>
       <div
         id="sponsor-logo"
         class="flex flex-wrap items-center justify-center gap-10 lg:gap-20 pointer-events-none px-2"
       >
-        <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="h-32 w-32"/>
-        <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="h-32 w-32"/>
-        <img src="/assets/sponsors/sponsor3.png" alt="JAJABOR" class="h-32 w-32"/>
-        <img src="/assets/sponsors/sponsor4.png" alt="Royal Enfield" class="h-32 w-32"/>
-        <img src="/assets/sponsors/swaglok.png" alt="Swaglok Merchandise Partner" class="h-32 w-32"/>
+        <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="h-32 w-32" />
+        <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="h-32 w-32" />
+        <img
+          src="/assets/sponsors/sponsor3.png"
+          alt="JAJABOR"
+          class="h-32 w-32"
+        />
+        <img
+          src="/assets/sponsors/king-biryani-edited.png"
+          alt="Royal Enfield"
+          class="h-32 w-32"
+        />
+        <img
+          src="/assets/sponsors/swaglok.png"
+          alt="Swaglok Merchandise Partner"
+          class="h-32 w-32"
+        />
       </div>
     </section>
   </div>
-<!--END -->
-
+  <!--END -->
 </Layout>
 
 <style>
@@ -332,7 +415,7 @@ import Layout from "../layouts/Layout.astro";
 
   #explore-container {
     background-color: #fff5fd;
-    filter: grayscale(0%); 
+    filter: grayscale(0%);
   }
   /* #background-vid{
     background-image: url("/assets/image (1).jpg");
@@ -340,7 +423,7 @@ import Layout from "../layouts/Layout.astro";
      background-repeat: no-repeat;
     background-position: right;
   } */
-  #flower{
+  #flower {
     /*NOT SUPPORTED BY FIREFOX */
     -webkit-box-reflect: below;
   }
