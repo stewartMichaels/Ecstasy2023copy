@@ -17,7 +17,7 @@ import NavLinks from "../components/NavLinks.astro";
 	</head>
 	<body class="">
 		<header id="nav-container" class="max-w-[600px] md:max-w-[1300px] mx-auto flex justify-between items-center p-3 md:p-10 relative z-20">
-			<a href="/" class="text-3xl font-playfair font-black text-white"><img id="logo" src="/assets/logo/logo1.png" class="p-2" alt="logo"></a>
+			<a href="/" class="text-3xl font-playfair font-black text-white"><img id="logo" src="/assets/logo/logo1.png" class="p-2 h-[13vh]" alt="logo"></a>
 			<Hamburger />
 			<NavLinks />
 		</header>
@@ -43,10 +43,21 @@ import NavLinks from "../components/NavLinks.astro";
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
-	#logo{
+	/* #logo{
 		height: 3.3em;
 		width: 5.7em;
-	}
+	} */
+	header {
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      height: 12vh;
+      /* background-image: url("/assets/stairs.jpg");
+      background-color: black; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 </style>
 
 

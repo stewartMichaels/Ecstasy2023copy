@@ -8,8 +8,8 @@ import Layout from "../layouts/Layout.astro";
     id="wrapper"
     class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10"
   >
-    <h1 class="text-5xl font-playfair text-center text-black pb-2 pt-20">
-      Contact Us!
+    <h1 class="text-5xl font-poppins font-black text-center text-black pb-1 pt-20">
+      Contact Us.
     </h1>
 	<p class="text-2xl font-serif text-center text-black pb-10">If you have any queries, feel free to write to us.</p>
 
@@ -19,9 +19,9 @@ import Layout from "../layouts/Layout.astro";
           id="contact-form"
           action="https://formspree.io/f/xwkjbobw"
           method="POST"
-          class="border  w-full md:w-9/12 px-5 pb-10 rounded-lg flex flex-col shadow-lg shadow-black"
+          class="border  w-full md:w-9/12 px-5 pb-10 rounded-lg flex flex-col shadow-sm shadow-black"
         >
-          <h1 class="text-4xl font-playfair text-center py-10 font-bold text-black">Leave us a Message!</h1>
+          <h1 class="text-3xl font-poppins text-center py-10 font-black text-black">Leave us a Message!</h1>
           <div class="mb-4">
             <label for="name" class="sr-only">Name</label>
             <input
@@ -30,7 +30,7 @@ import Layout from "../layouts/Layout.astro";
               id="name"
               placeholder="Name"
               required
-              class="bg-[#4f5c88] w-full py-2 px-4 rounded-md border-[#0f172a] focus:ring-offset-2 focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-transparent text-white shadow-black shadow-md"
+              class="bg-[#4f5c88] w-full py-2 px-4 rounded-md border-[#0f172a] focus:ring-offset-2 focus:outline-none focus:ring-1 focus:ring-[#4f5c88] focus:border-transparent text-white shadow-black shadow-md"
             />
           </div>
           <div class="mb-4">
@@ -41,7 +41,7 @@ import Layout from "../layouts/Layout.astro";
               id="email"
               placeholder="Email"
               required
-              class="bg-[#4f5c88] w-full py-2 px-4 rounded-md border-gray-300 focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent text-white shadow-black shadow-md"
+              class="bg-[#4f5c88] w-full py-2 px-4 rounded-md border-gray-300 focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-[#4f5c88] focus:border-transparent text-white shadow-black shadow-md"
             />
           </div>
 
@@ -55,7 +55,7 @@ import Layout from "../layouts/Layout.astro";
               placeholder="Message - Limit Less Than 500 Words"
               required
               maxlength="1000"
-              class="bg-[#4f5c88] w-full py-2 px-4 rounded-md border-gray-300 focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent text-white resize-none shadow-md shadow-black"
+              class="bg-[#4f5c88] w-full py-2 px-4 rounded-md border-gray-300 focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-[#4f5c88] focus:border-transparent text-white resize-none shadow-md shadow-black"
             ></textarea>
             <span id="message-counter" class="text-sm text-gray-400"></span>
             <span id="message-error" class="text-sm text-red-500 hidden"
@@ -64,10 +64,10 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- Submit Button -->
-          <div class="text-right self-center">
+          <div class="text-right self-center pt-5">
             <button
               type="submit"
-              class="flex justify-center items-center bg-[#eb66a7] text-white hover:bg-[#f44a99] hover:text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out shadow-black shadow-md"
+              class="flex justify-center items-center bg-[#191919] text-white hover:bg-[#373434] hover:text-slate-200 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out shadow-black shadow-md"
               >Submit</button
             >
           </div>
