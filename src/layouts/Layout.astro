@@ -38,12 +38,30 @@ import Footer from "../components/Footer.astro";
     <slot />
 
     <Footer />
+    <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101402658"
+      ><img
+        alt="Clicky"
+        src="//static.getclicky.com/media/links/badge.gif"
+        border="0"
+      /></a
+    >
+    <script async src="//static.getclicky.com/101402658.js"></script>
+    <noscript
+      ><p>
+        <img
+          alt="Clicky"
+          width="1"
+          height="1"
+          src="//in.getclicky.com/101402658ns.gif"
+        />
+      </p></noscript
+    >
   </body>
 </html>
 
 <style is:global>
   :root {
-      color-scheme: only light;
+    color-scheme: only light;
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
       45deg,
